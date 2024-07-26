@@ -8,7 +8,6 @@ import org.maestri.DTOs.Primitives.Price
 import org.maestri.DTOs.Protocols.Parametable
 import org.maestri.DTOs.Protocols.Responsable
 import org.maestri.Serializers.DateSerializer
-import org.maestri.Serializers.URISerializer
 import java.util.*
 
 object Operation {

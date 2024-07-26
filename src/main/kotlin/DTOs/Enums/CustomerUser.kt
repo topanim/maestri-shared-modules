@@ -6,10 +6,8 @@ import kotlinx.serialization.modules.polymorphic
 import org.maestri.DTOs.Enums.utils.PolymorphSerializable
 import org.maestri.DTOs.Objects.User
 import org.maestri.DTOs.Protocols.Responsable
-import org.maestri.Serializers.DateSerializer
 import org.maestri.Serializers.URISerializer
 import java.net.URI
-import java.net.URL
 
 @Serializable
 sealed class CustomerUser : Responsable {

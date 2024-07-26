@@ -9,7 +9,6 @@ import org.maestri.DTOs.Protocols.Parametable
 import org.maestri.DTOs.Protocols.Responsable
 import org.maestri.Serializers.URISerializer
 import java.net.URI
-import java.net.URL
 import java.util.*
 
 /// Пространство имен `Salon` содержит типы данных для взаимодействия с информацией о салонах красоты.

@@ -1,7 +1,6 @@
 package org.maestri.DTOs.OptionSet
 
 import kotlinx.serialization.Serializable
-import org.maestri.Serializers.MaestriPermissionSetSerializer
 import org.maestri.Serializers.PermissionSetSerializer
 
 @Serializable(PermissionSetSerializer::class)
