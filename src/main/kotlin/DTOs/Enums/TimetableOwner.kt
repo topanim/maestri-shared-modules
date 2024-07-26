@@ -1,5 +1,6 @@
 package org.maestri.DTOs.Enums
 
+import Serializers.UUIDSerializer
 import kotlinx.serialization.Serializable
 import kotlinx.serialization.modules.SerializersModuleBuilder
 import kotlinx.serialization.modules.polymorphic
@@ -25,8 +26,12 @@ sealed class TimetableOwner : Parametable, Responsable {
     }
 
     @Serializable
-    data class Salon(val id: UUID) : TimetableOwner()
+    data class Salon(
+        @Serializable(with = UUIDSerializer::class) val id: UUID
+    ) : TimetableOwner()
 
     @Serializable
-    data class Employee(val id: UUID) : TimetableOwner()
+    data class Employee(
+        @Serializable(with = UUIDSerializer::class) val id: UUID
+    ) : TimetableOwner()
 }
